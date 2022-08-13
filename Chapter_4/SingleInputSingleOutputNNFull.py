@@ -8,4 +8,4 @@ for iteration in range(20):
     # From a mathematical POV, I don't know why the derivative is like so.
     derivative = input * (prediction - goal_prediction)
     weight = weight - (alpha * derivative)
-    print("Error:" + str(error) + " ---- Prediction:" + str(prediction))
+    print("Error:" + str(round(error, 3)) + " -- Pred:" + str(round(prediction, 3)) + " -- weight:" + str(round(weight, 3)))
